@@ -49,25 +49,24 @@ IAM roles are attached to EC2 instances for secure AWS resource access. Security
 ## Project Structure
 
 aws-3tier-terraform-jenkins/
+app
+  app.py
+  requirements.txt
+  Dockerfile
 
-app/
-  ├── app.py
-  ├── requirements.txt
-  └── Dockerfile
+terraform
+  main.tf
+  variables.tf
+  outputs.tf
+  vpc.tf
+  ec2.tf
+  rds.tf
+  alb.tf
+  autoscaling.tf
+  iam.tf
 
-terraform/
-  ├── main.tf
-  ├── variables.tf
-  ├── outputs.tf
-  ├── vpc.tf
-  ├── ec2.tf
-  ├── rds.tf
-  ├── alb.tf
-  ├── autoscaling.tf
-  └── iam.tf
-
-jenkins/
-  └── Jenkinsfile
+jenkins
+  Jenkinsfile
 
 README.md
 
@@ -79,7 +78,7 @@ Note: An active AWS account is required to provision infrastructure.
 
 Step 1: Clone the Repository
 
-git clone https://github.com/your-username/aws-3tier-terraform-jenkins.git
+git clone https://github.com/YashSV-cloud/aws-3tier-terraform-jenkins.git
 cd aws-3tier-terraform-jenkins
 
 Step 2: Build and Test Application Locally
